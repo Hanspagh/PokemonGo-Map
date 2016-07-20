@@ -604,7 +604,7 @@ def main():
     y = 0
     dx = 0
     dy = -1
-    steplimit2 = ((steplimit-1) * 8) + 1 
+    steplimit2 = (((steplimit*steplimit) - steplimit) * 4) + 1
     for step in range(steplimit2):
     	clear_stale_pokemons()
         #starting at 0 index
