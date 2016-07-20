@@ -607,7 +607,7 @@ def main():
     steplimit2 = ((steplimit-1) * 9) + 1 
     for step in range(steplimit2):
         #starting at 0 index
-        debug('looping: step {} of {}'.format((step+1), steplimit**2))
+        debug('looping: step {} of {}'.format((step+1), steplimit2))
         #debug('steplimit: {} x: {} y: {} pos: {} dx: {} dy {}'.format(steplimit2, x, y, pos, dx, dy))
         # Scan location math
         if -steplimit2 / 2 < x <= steplimit2 / 2 and -steplimit2 / 2 < y <= steplimit2 / 2:
