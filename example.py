@@ -588,7 +588,7 @@ def main():
 
     api_endpoint, access_token, profile_response = login(args)
 
-    clear_stale_pokemons()
+    
 
     steplimit = int(args.step_limit)
 
@@ -606,6 +606,7 @@ def main():
     dy = -1
     steplimit2 = ((steplimit-1) * 8) + 1 
     for step in range(steplimit2):
+    	clear_stale_pokemons()
         #starting at 0 index
         debug('looping: step {} of {}'.format((step+1), steplimit2))
         #debug('steplimit: {} x: {} y: {} pos: {} dx: {} dy {}'.format(steplimit2, x, y, pos, dx, dy))
